@@ -1,0 +1,19 @@
+
+<div class="text-center mt-5" > <!--margin 4 mt-4-->
+    <form class="form-signin border rounded" method = "post" (submit)= 'login($event)'> <!--for handling submit..created submit event-->
+        <img class="mb-4" src="assets/cart.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+        <hr>
+<!--if error occurs  these two <P> lines shows to the user as an alert-->
+        <p *ngIf = 'error' class = 'alert alert-danger'>{{error}}</p>
+        <p *ngIf = 'success' class = 'alert alert-success'>{{success}}</p>
+        
+        <!--Enter your email-->
+        <input type="email" id="inputEmail" name = "email" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" name = "password" class="form-control" placeholder="Password" required>
+
+      
+        <button class="mt-3 btn btn-lg btn-light border rounded btn-block" type="submit">Login</button>
+      </form>
+</div>

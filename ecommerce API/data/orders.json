@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "5eb6ab2967972149a0661a41"
+  },
+  "product": {
+    "$oid": "5eb6950867972149a0661a19"
+  },
+  "quantity": 1,
+  "price": 630,
+  "user": {
+    "$oid": "5eb6a995e1046334e02f2feb"
+  },
+  "firstName": "Bhushan",
+  "lastName": "Yadav",
+  "address": "shirdi",
+  "paymentMethod": "COD",
+  "status": "pending",
+  "created_at": {
+    "$date": "2020-05-09T13:07:53.807Z"
+  },
+  "updatedAt": {
+    "$date": "2020-05-09T13:07:53.807Z"
+  },
+  "__v": 0
+}]

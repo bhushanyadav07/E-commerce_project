@@ -1,0 +1,22 @@
+<div class="text-center mt-4" > <!--margin 4 mt-4-->
+    <form class="form-signin border rounded" (submit)= 'signup($event)'> <!--for handling submit..created submit event-->
+        <img class="mb-4" src="assets/cart.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Create Account</h1>
+        <hr>
+<!--if error occurs  these two <P> lines shows to the user as an alert-->
+        <p *ngIf = 'error' class = 'alert alert-danger'>{{error}}</p>
+        <p *ngIf = 'success' class = 'alert alert-success'>{{success.message}}</p>
+        <!--Enter your name-->
+        <input type="text" id="name" name = "name" class="form-control mb-2" placeholder="Your Name" required autofocus>
+        <!--Enter your email-->
+        <input type="email" id="inputEmail" name = "email" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" name = "password" class="form-control" placeholder="Password" required>
+
+        <!--contact number-->
+        <input type="number" id="phone" name = "phone" class="form-control mb-2" placeholder="Phone number" required>
+        
+        <button class="mt-3 btn btn-lg btn-light border rounded btn-block" type="submit">Create Account</button>
+        <!--<p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>-->
+      </form>
+</div>

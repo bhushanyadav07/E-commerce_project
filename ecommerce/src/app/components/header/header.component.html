@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="#">E-commerce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="">Store <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin/dashboard">Admin Dashboard</a>
+        </li>
+        
+      </ul>
+<!--Instead of href used routerlink(it doesn't reload the page) which is faster than href...href took more time to load thats why i used router link-->
+      <div class="form-inline my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/orders">Orders <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/cart">Cart</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/login">login <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="javascript:void(0);">logout</a> <!--we are not used any page here for logout we do this by using dynamic things-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/signup">Signup</a>
+          </li>
+          
+          
+        </ul>
+      
+    </div>
